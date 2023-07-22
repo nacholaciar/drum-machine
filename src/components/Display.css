@@ -1,0 +1,7 @@
+#display {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Digital-7 Mono", monospace;
+}
