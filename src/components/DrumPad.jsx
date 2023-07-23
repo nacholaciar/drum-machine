@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { connect } from "react-redux";
 import { updateDisplay } from "../redux/actions";
-import "./DrumPad.css";
 
 const DrumPad = ({ id, name, updateDisplay, audio }) => {
   const audioRef = useRef(null);

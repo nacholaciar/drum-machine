@@ -1,5 +1,4 @@
 import React from "react";
-import "./Display.css";
 
 const Display = ({ text }) => (
   <div id="display" className="bg-dark text-light rounded p-2">

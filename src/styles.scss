@@ -1,0 +1,39 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$font-digital-mono: "Digital-7 Mono", monospace;
+$bg-gradient: linear-gradient(#756de4, #e5c6ac);
+
+#display {
+  height: 50px;
+  font-family: $font-digital-mono;
+  @include flex-center;
+}
+
+.drum-pad {
+  width: 100%;
+  height: 80px;
+  font-size: 20px;
+  @include flex-center;
+}
+
+.radio {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.App {
+  @include flex-center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: $bg-gradient;
+}

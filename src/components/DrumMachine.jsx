@@ -3,7 +3,6 @@ import Display from "./Display";
 import DrumPad from "./DrumPad";
 import { connect } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./DrumMachine.css";
 
 const keyNames = {
   Q: "Heater 1",
