@@ -1,4 +1,4 @@
-import { createStore } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
 import drumReducer from "./reducers";
 
 const initialState = {
@@ -14,6 +14,9 @@ const initialState = {
   C: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
 };
 
-const store = createStore(drumReducer, initialState);
+const store = configureStore({
+  reducer: drumReducer,
+  preloadedState: initialState
+});
 
 export default store;
